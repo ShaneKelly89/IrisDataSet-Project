@@ -12,7 +12,7 @@ dataset = pand.read_csv(file) #coding for iris.csv
 print(dataset.info())
 print("The total number of rows and columns respectively in the Iris Dataset are:",dataset.shape)
 
-#print(dataset.to_string()) #this will ppint out the entire dataset if wanted. 
+#print(dataset.to_string()) #this will print out the entire dataset if wanted. 
 print("This is confirmed in the below output:")
 print(dataset)
 
