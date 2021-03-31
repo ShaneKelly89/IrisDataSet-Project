@@ -8,15 +8,17 @@ import pandas as pand
 
 file = "iris.csv"
 dataset = pand.read_csv(file) #coding for iris.csv 
-#print(dataset.shape)
-print(dataset.info())
-
-
 print("The total number of rows and columns respectively in the Iris Dataset are:",dataset.shape)
 
-#print(dataset.to_string()) #this will print out the entire dataset if wanted. 
+print("\n")   #Putting a space between the output so they are not on top of eachother 
+
 print("This is confirmed in the below output:")
+print(dataset.info())
+print("\n")
 print(dataset)
+#print(dataset.to_string()) #this will print out the entire dataset if wanted. 
+
+print("\n")
 
 #we can also get a statistical summary of the dataset 
 print("Below is a statistical summary of the data: ")
