@@ -7,7 +7,8 @@
 import pandas as pand 
 
 file = "iris.csv"
-dataset = pand.read_csv(file) #coding for iris.csv 
+names = ['sepal lenght', 'sepal width', 'petal lenght', 'petal width', 'species']
+dataset = pand.read_csv(file, names = names) #coding for iris.csv 
 print("The total number of rows and columns respectively in the Iris Dataset are:",dataset.shape)
 
 print("\n")   #Putting a space between the output so they are not on top of eachother 
@@ -20,6 +21,10 @@ print(dataset)
 
 print("\n")
 
+print("The data places variables evenly into three species of Iris Flower:")
+print(dataset.groupby('species').size())
+ 
+print("\n")
 #we can also get a statistical summary of the dataset 
 print("Below is a statistical summary of the data: ")
 print(dataset.describe())
