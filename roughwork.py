@@ -17,31 +17,51 @@ import matplotlib.pyplot as plt
 
 file = "iris.csv"
 data = np.genfromtxt(file, delimiter=',')
+#print(data)
 
 #index = ['sepal lenght', 'sepal width', 'petal lenght', 'petal width', 'species']
 
-#I need to get the min and max of each of the 4 variables to plot a histograph 
 #Seperate out the each row of data (variable) seperetly 
-
+#Min and max for each variable 
 firstmin = np.min(data[:,0]) #coding for the minumun of the 1st row of data (Septal Lenght)
-print(firstmin)
+#print(firstmin)
 secondmin = np.min(data[:,1]) #sepal width 
-print(secondmin)
+#print(secondmin)
 thirdmin = np.min(data[:,2]) #petal lenght
-print(thirdmin)
+#print(thirdmin)
 fourthmin = np.min(data[:,3]) #petal width
-print(fourthmin)
+#print(fourthmin)
 
 #Max for each row of data 
 firstmax = np.max(data[:,0]) #Sepal Lenght
-print(firstmax)
+#print(firstmax)
 secondmax = np.max(data[:,1]) #Sepal Width
-print(secondmax)
+#print(secondmax)
 thirdmax = np.max(data[:,2]) #Petal Lenght
-print(thirdmax)
+#print(thirdmax)
 fourthmax = np.max(data[:,3]) #Petal Width
-print(fourthmax)
+#print(fourthmax)
 
+#Trying at plotting historgrams 
+#Septal Lenght
+sl = data[:,0]
+print(sl)
+plt.hist(sl)
+plt.show()
+#Sepal Width
+sw = data[:,1]
+print(sw)
+plt.hist(sw)
+plt.show()
+#Petal Lenght
+pl = data[:,2]
+print(pl)
+plt.hist(pl)
+plt.show()
+#Petal Width
+pw = data[:,3]
+print(pw)
+plt.hist(pw)
+plt.show()
 
-
-
+#Create code for each variable first in analysis.py 
