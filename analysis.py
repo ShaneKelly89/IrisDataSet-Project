@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pnd 
 import matplotlib.pyplot as plt 
 #Importing the needed libraries 
+#https://realpython.com/python-csv/
 
 file = "iris.csv"
 index = ['sepal lenght', 'sepal width', 'petal lenght', 'petal width', 'species']
@@ -28,10 +29,45 @@ print(dataset.groupby('species').size())
 print("\n")
 print("We can also take a look at the statistical summary of the data:")
 print(dataset.describe())
-
+print("\n")
 #Now I will read the file for NumPy 
+#https://stackoverflow.com/questions/3518778/how-do-i-read-csv-data-into-a-record-array-in-numpy
 data = np.genfromtxt(file, delimiter=',')
-print(data)
+#print(data)
+
+#index = ['sepal lenght', 'sepal width', 'petal lenght', 'petal width', 'species']
+
+#http://www.hpc-carpentry.org/hpc-python/03-lists/
+#I will now write code and create a variable for each row of data 
+
+
+sepalLenght = data[:,0]
+sepalWidth = data[:,1]
+petalLenght = data[:,2]
+petalWidth = data[:,3]
+#print(sepalLenght)
+#print(sepalWidth)
+#print(petalLenght)
+#print(petalWidth)
+#ran to check to see if the splice was in line with file 
+
+#taking a closer look at each of the variables 
+#lets use python to describe the statistical properties of each variable 
+#https://jakevdp.github.io/PythonDataScienceHandbook/02.04-computation-on-arrays-aggregates.html
+#with our newly created variables above we can run stats for the min, max, mean, and st. dev for each 
+
+#Sepal Lenght stats 
+print("Below are some statistics of the 'Sepal Lenght' variable within the Iris Dataset")
+slMin = np.min(sepalLenght)
+print("Sepal Lenght minimum:",slMin)
+slMax = np.max(sepalLenght)
+print("Sepal Lenght max:",slMax)
+slMean = np.mean(sepalLenght)
+print("Sepal Lenght mean:",slMean)
+slStd = np.std(sepalLenght)
+print("Sepal Lenght standard deviation:",slStd)
+
+
 
 
 
