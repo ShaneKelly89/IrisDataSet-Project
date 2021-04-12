@@ -65,3 +65,6 @@ plt.hist(pw)
 plt.show()
 
 #Create code for each variable first in analysis.py 
+
+#Code added to analysis.py based on rough work here
+#Happy with code but it is kind of repetative will look to see if there is a way to make it cleaner? 

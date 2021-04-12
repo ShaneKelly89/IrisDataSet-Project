@@ -134,3 +134,6 @@ plt.title("Histrogram for Petal Width Data")
 plt.xlabel('Petal Width (cm)')
 plt.ylabel('distribution of occurance')
 plt.show()
+
+#Happy with code at this point, will start looking at scatterplots now but will also be checking if code can improve
+#Refer to line 70 in roughwork.py
