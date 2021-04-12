@@ -52,6 +52,9 @@ petalWidth = data[:,3]
 #lets use python to describe the statistical properties of each variable 
 #https://jakevdp.github.io/PythonDataScienceHandbook/02.04-computation-on-arrays-aggregates.html
 #with our newly created variables above we can run stats for the min, max, mean, and st. dev for each 
+#I will also plot each variable on a histrgram 
+#https://bit.ly/325l7aw
+
 
 print("As seen above, the dataset contains numeric data which is held within four seperate columns")
 #Sepal Lenght stats 
@@ -66,6 +69,15 @@ print("Sepal Lenght mean:",slMean)
 print("Sepal Lenght standard deviation:",slStd)
 print("\n")
 
+#I am choosing to add in the histogram after each variables data so they appear as the output addressed each variable
+plt.hist(sepalLenght, color = 'b', label = 'Data')
+plt.legend()       
+plt.title("Histrogram for Sepal Lenght Data")
+plt.xlabel('Sepal Lenght (cm)')
+plt.ylabel('distribution of occurance')
+plt.show()
+
+
 #Sepal Width stats 
 print("Below are some statistics of the 'Sepal Width' column within the dataset")
 swMin = np.min(sepalWidth)
@@ -76,6 +88,13 @@ print("Sepal Width min:",swMin)
 print("Sepal Width max:",swMax)
 print("Sepal With mean:",swMean)
 print("Sepal Width standard deviation:",swStd)
+
+plt.hist(sepalWidth, color = 'b', label = 'Data')
+plt.legend()       
+plt.title("Histrogram for Sepal Width Data")
+plt.xlabel('Sepal Width (cm)')
+plt.ylabel('distribution of occurance')
+plt.show()
 
 print("\n")
 #Petal Lenght stats
@@ -90,6 +109,13 @@ print("Petal Lenght max:",plMax)
 print("Petal Lenght mean:",plMean)
 print("Petal Lenght standard deviation:",plStd)
 
+plt.hist(petalLenght, color = 'b', label = 'Data')
+plt.legend()       
+plt.title("Histrogram for Petal Lenght Data")
+plt.xlabel('Petal Lenght (cm)')
+plt.ylabel('distribution of occurance')
+plt.show()
+
 print("\n")
 #Petal Width stats
 print("Below are some statistics of the 'Petal Width' column within the dataset")
@@ -99,5 +125,12 @@ pwMean = np.mean(petalWidth)
 pwStd = np.std(petalWidth)
 print("Petal Width min:",pwMin)
 print("Petal Width max:",pwMax)
-print("Petal With mean:",pwMean)
+print("Petal Width mean:",pwMean)
 print("Petal Width standard deviation:",pwStd)
+
+plt.hist(petalWidth, color = 'b', label = 'Data')
+plt.legend()       
+plt.title("Histrogram for Petal Width Data")
+plt.xlabel('Petal Width (cm)')
+plt.ylabel('distribution of occurance')
+plt.show()
