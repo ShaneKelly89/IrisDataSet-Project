@@ -137,3 +137,42 @@ plt.show()
 
 #Happy with code at this point, will start looking at scatterplots now but will also be checking if code can improve
 #Refer to line 70 in roughwork.py
+
+#Scatterplots - output a scatteerplot of each pair of variables 
+#A scatter plot (also called a scatterplot, scatter graph, scatter chart, scattergram, or scatter diagram) is a 
+# type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables 
+# for a set of data
+
+#https://www.w3schools.com/python/python_ml_scatterplot.asp
+#https://www.w3schools.com/python/matplotlib_scatter.asp
+
+a = sepalLenght        #creating variables to use for scatterplots 
+b = sepalWidth
+c = petalLenght
+d = petalWidth
+
+plt.scatter(a,b, color = 'r')
+plt.title("Scatter Plot for Sepal Lenght and Sepal Width")
+plt.xlabel("Sepal Lenght")
+plt.ylabel("Sepal Width")
+plt.show()
+plt.scatter(a,c, color = 'r')
+plt.title("Scatter Plot for Sepal Lenght and Petal Lenght")
+plt.xlabel("Sepal Lenght")
+plt.ylabel("Petal Lenght")
+plt.show()
+plt.scatter(a,d, color = 'r')
+plt.title("Scatter Plot for Sepal Lenght and Petal Width")
+plt.xlabel("Sepal Lenght")
+plt.ylabel("Petal Width")
+plt.show()
+plt.scatter(b,c, color = 'r')
+plt.title("Scatter Plot for Sepal Width and Petal Lenght")
+plt.xlabel("Sepal Width")
+plt.ylabel("Petal Lenght")
+plt.show()
+plt.scatter(c,d, color = 'r')
+plt.title("Scatter Plot for Petal Lenght and Petal Width")
+plt.xlabel("Petal Lenght")
+plt.ylabel("Petal Width")
+plt.show()
