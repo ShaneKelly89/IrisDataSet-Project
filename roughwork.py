@@ -75,6 +75,8 @@ fourthmax = np.max(data[:,3]) #Petal Width
 # for a set of data
 
 #https://www.w3schools.com/python/python_ml_scatterplot.asp
+#https://www.w3schools.com/python/matplotlib_scatter.asp
+
 sepalLenght = data[:,0]
 sepalWidth = data[:,1]
 petalLenght = data[:,2]
@@ -111,3 +113,38 @@ plt.xlabel("Petal Lenght")
 plt.ylabel("Petal Width")
 plt.show()
 
+#Can I do a scatter plot of each 3 of the species of flower?? 
+#Seperate the first 50, second 50, 3rd 50 of ?? 
+
+#Setosa flower 
+setosaSL = data[:50,0]
+setosaSW = data[:50,1]
+setosaPL = data[:50,2]
+setosaPW = data[:50,3]
+#print(setosaSL)pyth
+#print(setosaSW)
+#print(setosaPL)
+#print(setosaPW)
+plt.scatter(setosaSL,setosaSW)
+plt.show()
+
+
+#versicolor flower 
+
+versiSL = data[50:100,0]
+versiSW = data[50:100,1]
+versiPL = data[50:100,2]
+versiPW = data[50:100,3]
+#print(versiSL)
+#print(versiSW)
+#print(versiPL)
+#print(versiPW)
+
+vergiSL = data[100:,0]
+vergiSW = data[100:,1]
+vergiPL = data[100:,2]
+vergiPW = data[100:,3]
+print(vergiSL)
+print(vergiSW)
+print(vergiPL)
+print(vergiPW)
