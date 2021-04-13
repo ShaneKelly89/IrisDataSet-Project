@@ -44,27 +44,70 @@ fourthmax = np.max(data[:,3]) #Petal Width
 
 #Trying at plotting historgrams 
 #Septal Lenght
-sl = data[:,0]
-print(sl)
-plt.hist(sl)
-plt.show()
+#sl = data[:,0]
+#print(sl)
+#plt.hist(sl)
+#plt.show()
 #Sepal Width
-sw = data[:,1]
-print(sw)
-plt.hist(sw)
-plt.show()
+#sw = data[:,1]
+#print(sw)
+#plt.hist(sw)
+#plt.show()
 #Petal Lenght
-pl = data[:,2]
-print(pl)
-plt.hist(pl)
-plt.show()
+#pl = data[:,2]
+#print(pl)
+#plt.hist(pl)
+#plt.show()
 #Petal Width
-pw = data[:,3]
-print(pw)
-plt.hist(pw)
-plt.show()
+#pw = data[:,3]
+#print(pw)
+#plt.hist(pw)
+#plt.show()
 
 #Create code for each variable first in analysis.py 
 
 #Code added to analysis.py based on rough work here
 #Happy with code but it is kind of repetative will look to see if there is a way to make it cleaner? 
+
+#Scatterplots - output a scatteerplot of each pair of variables 
+#A scatter plot (also called a scatterplot, scatter graph, scatter chart, scattergram, or scatter diagram) is a 
+# type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables 
+# for a set of data
+
+#https://www.w3schools.com/python/python_ml_scatterplot.asp
+sepalLenght = data[:,0]
+sepalWidth = data[:,1]
+petalLenght = data[:,2]
+petalWidth = data[:,3]
+
+a = sepalLenght
+b = sepalWidth
+c = petalLenght
+d = petalWidth
+
+plt.scatter(a,b)
+plt.title("Scatter Plot for Sepal Lenght and Sepal Width")
+plt.xlabel("Sepal Lenght")
+plt.ylabel("Sepal Width")
+plt.show()
+plt.scatter(a,c)
+plt.title("Scatter Plot for Sepal Lenght and Petal Lenght")
+plt.xlabel("Sepal Lenght")
+plt.ylabel("Petal Lenght")
+plt.show()
+plt.scatter(a,d)
+plt.title("Scatter Plot for Sepal Lenght and Petal Width")
+plt.xlabel("Sepal Lenght")
+plt.ylabel("Petal Width")
+plt.show()
+plt.scatter(b,c)
+plt.title("Scatter Plot for Sepal Width and Petal Lenght")
+plt.xlabel("Sepal Width")
+plt.ylabel("Petal Lenght")
+plt.show()
+plt.scatter(c,d)
+plt.title("Scatter Plot for Petal Lenght and Petal Width")
+plt.xlabel("Petal Lenght")
+plt.ylabel("Petal Width")
+plt.show()
+
