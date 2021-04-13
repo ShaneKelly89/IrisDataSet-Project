@@ -68,6 +68,28 @@ fourthmax = np.max(data[:,3]) #Petal Width
 
 #Code added to analysis.py based on rough work here
 #Happy with code but it is kind of repetative will look to see if there is a way to make it cleaner? 
+#I could try and create a dictionary containing the info about each column 
+sepalLenght = data[:,0]
+sepalWidth = data[:,1]
+petalLenght = data[:,2]
+petalWidth = data[:,3]
+
+thisdict = [{
+    "title": "Sepal Lenght",
+    "data": sepalLenght,
+},{
+    "title": "Sepal Width",
+    "data": sepalWidth,
+}, {
+    "title": "Petal Lenght",
+    "data": petalLenght,
+}, {
+    "title": "Petal Width",
+    "data": petalWidth,
+}]
+for x in thisdict:
+    print(x)
+
 
 #Scatterplots - output a scatteerplot of each pair of variables 
 #A scatter plot (also called a scatterplot, scatter graph, scatter chart, scattergram, or scatter diagram) is a 
@@ -127,10 +149,7 @@ setosaPW = data[:50,3]
 #print(setosaPW)
 plt.scatter(setosaSL,setosaSW)
 plt.show()
-
-
 #versicolor flower 
-
 versiSL = data[50:100,0]
 versiSW = data[50:100,1]
 versiPL = data[50:100,2]
@@ -139,7 +158,7 @@ versiPW = data[50:100,3]
 #print(versiSW)
 #print(versiPL)
 #print(versiPW)
-
+#verginica 
 vergiSL = data[100:,0]
 vergiSW = data[100:,1]
 vergiPL = data[100:,2]
