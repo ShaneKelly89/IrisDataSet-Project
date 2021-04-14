@@ -88,7 +88,19 @@ thisdict = [{
     "data": petalWidth,
 }]
 for x in thisdict:
-    print(x)
+    variableMin = np.min(x["data"])   
+    variableMax = np.max(x["data"])
+    variableMean = np.mean(x["data"])
+    variableStd = np.std(x["data"])
+    print("The Minimum value for {} is {}".format(x["title"], variableMin))
+    print("The Maximum value for {} is {}".format(x["title"], variableMax))
+    print("The Mean value for {} is {}".format(x["title"], variableMean))
+    print("The Standard Deviation for {} is {}".format(x["title"], variableStd))
+    print("\n")
+    #trying histogram in the loop?
+    plt.hist(x["data"])
+    plt.show()
+    
 
 
 #Scatterplots - output a scatteerplot of each pair of variables 
