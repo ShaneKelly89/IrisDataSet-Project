@@ -56,38 +56,47 @@ petalWidth = data[:,3]
 #https://bit.ly/325l7aw
 
 
-print("As seen above, the dataset contains numeric data which is held within four seperate columns")
-#Sepal Lenght stats 
-print("Below are some statistics of the 'Sepal Lenght' column within the dataset")
-slMin = np.min(sepalLenght)
-slMax = np.max(sepalLenght)
-slMean = np.mean(sepalLenght)
-slStd = np.std(sepalLenght)
-print("Sepal Lenght minimum:",slMin)
-print("Sepal Lenght max:",slMax)
-print("Sepal Lenght mean:",slMean)
-print("Sepal Lenght standard deviation:",slStd)
-print("\n")
+#Having looked back over previous lectures and searching online for a way to tidy up my code 
+#I tried creating a dict which would hold the variable title and its assocaited data
+#Rough work was carried out in roughwork.py
+#https://learnonline.gmit.ie/pluginfile.php/293981/mod_label/intro/Lab%2005%20dataStructures.pdf 
+#https://jakevdp.github.io/WhirlwindTourOfPython/06-built-in-data-structures.html
 
-#I am choosing to add in the histogram after each variables data so they appear as the output addressed each variable
+print("As seen above, the dataset contains numeric data which is held within four seperate columns")
+print("Printed blew are some statistical details for each of the four variables in the columns:")
+
+column = [{                              #Creating a dict containing variable and corresponding data 
+    "title": "Sepal Lenght",
+    "data": sepalLenght,
+},{
+    "title": "Sepal Width",
+    "data": sepalWidth,
+}, {
+    "title": "Petal Lenght",
+    "data": petalLenght,
+}, {
+    "title": "Petal Width",
+    "data": petalWidth,
+}]
+for x in column:                   #creating a for loop to go through our dict 
+    variableMin = np.min(x["data"])   #creating varaibles to loop through 
+    variableMax = np.max(x["data"])
+    variableMean = np.mean(x["data"])
+    variableStd = np.std(x["data"])
+    print("The Minimum value for {} is {}".format(x["title"], variableMin))
+    print("The Maximum value for {} is {}".format(x["title"], variableMax))
+    print("The Mean value for {} is {}".format(x["title"], variableMean))
+    print("The Standard Deviation for {} is {}".format(x["title"], variableStd))
+    print("\n")
+
+
+#Histograms
 plt.hist(sepalLenght, color = 'b', label = 'Data')
 plt.legend()       
 plt.title("Histrogram for Sepal Lenght Data")
 plt.xlabel('Sepal Lenght (cm)')
 plt.ylabel('distribution of occurance')
 plt.show()
-
-
-#Sepal Width stats 
-print("Below are some statistics of the 'Sepal Width' column within the dataset")
-swMin = np.min(sepalWidth)
-swMax = np.max(sepalWidth)
-swMean = np.mean(sepalWidth)
-swStd = np.std(sepalWidth)
-print("Sepal Width min:",swMin)
-print("Sepal Width max:",swMax)
-print("Sepal With mean:",swMean)
-print("Sepal Width standard deviation:",swStd)
 
 plt.hist(sepalWidth, color = 'b', label = 'Data')
 plt.legend()       
@@ -96,37 +105,12 @@ plt.xlabel('Sepal Width (cm)')
 plt.ylabel('distribution of occurance')
 plt.show()
 
-print("\n")
-#Petal Lenght stats
-print("Below are some statistics of the 'Petal Lenght' column within the dataset")
-plMin = np.min(petalLenght)
-plMax = np.max(petalLenght)
-plMean = np.mean(petalLenght)
-plStd = np.std(petalLenght)
-print("Petal Lenght standard deviation:",plStd)
-print("Petal Lenght minimum:",plMin)
-print("Petal Lenght max:",plMax)
-print("Petal Lenght mean:",plMean)
-print("Petal Lenght standard deviation:",plStd)
-
 plt.hist(petalLenght, color = 'b', label = 'Data')
 plt.legend()       
 plt.title("Histrogram for Petal Lenght Data")
 plt.xlabel('Petal Lenght (cm)')
 plt.ylabel('distribution of occurance')
 plt.show()
-
-print("\n")
-#Petal Width stats
-print("Below are some statistics of the 'Petal Width' column within the dataset")
-pwMin = np.min(petalWidth)
-pwMax = np.max(petalWidth)
-pwMean = np.mean(petalWidth)
-pwStd = np.std(petalWidth)
-print("Petal Width min:",pwMin)
-print("Petal Width max:",pwMax)
-print("Petal Width mean:",pwMean)
-print("Petal Width standard deviation:",pwStd)
 
 plt.hist(petalWidth, color = 'b', label = 'Data')
 plt.legend()       
