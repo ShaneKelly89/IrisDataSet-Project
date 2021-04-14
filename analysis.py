@@ -97,6 +97,43 @@ for x in column:                   #creating a for loop to go through our dict
 
 #Really happy with the above code!! A lot neater and gets rid of un needed lines of repeatative code.
 
+#Having explored and played around with the data, I have decided to create histograms for each of the three species 
+#containing the data for each variable 
+#To do this I will first isloate the data for each species within the variable columns 
+#The use these to create a new variable for each of the 3 species 
+
+setosaSL = data[:50,0]
+setosaSW = data[:50,1]
+setosaPL = data[:50,2]
+setosaPW = data[:50,3]
+
+versiSL = data[50:100,0]
+versiSW = data[50:100,1]
+versiPL = data[50:100,2]
+versiPW = data[50:100,3]
+
+vergiSL = data[100:,0]
+vergiSW = data[100:,1]
+vergiPL = data[100:,2]
+vergiPW = data[100:,3]
+#prints statements were ran on the above data to check they were correct 
+
+verginica = (vergiSL, vergiSW, vergiPL, vergiPW)
+versicolor = (versiSL, versiSW, versiPL, versiPW)
+setosa = (setosaSL, setosaSW, setosaPL, setosaPW)
+
+plt.hist(verginica)
+plt.show()
+plt.hist(versicolor)
+plt.show()
+plt.hist(setosa)
+plt.show()
+
+
+
+
+
+
 #Scatterplots - output a scatteerplot of each pair of variables 
 #A scatter plot (also called a scatterplot, scatter graph, scatter chart, scattergram, or scatter diagram) is a 
 # type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables 
