@@ -67,7 +67,7 @@ fourthmax = np.max(data[:,3]) #Petal Width
 #Create code for each variable first in analysis.py 
 
 #Code added to analysis.py based on rough work here
-#Happy with code but it is kind of repetative will look to see if there is a way to make it cleaner? 
+#Happy with code (but it is kind of repetative will look to see if there is a way to make it cleaner? 
 #I could try and create a dictionary containing the info about each column 
 sepalLenght = data[:,0]
 sepalWidth = data[:,1]
@@ -97,9 +97,13 @@ for x in thisdict:
     print("The Mean value for {} is {}".format(x["title"], variableMean))
     print("The Standard Deviation for {} is {}".format(x["title"], variableStd))
     print("\n")
-    #trying histogram in the loop?
-    plt.hist(x["data"])
+    plt.hist(x["data"], color = 'b', label = 'Data')
+    plt.title("Histrogram for {}".format(x["title"]))
+    plt.xlabel("{} (cm)".format(x["title"]))
+    plt.ylabel("Distribution of occurance")
+    plt.legend
     plt.show()
+    
     
 
 
