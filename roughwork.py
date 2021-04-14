@@ -159,7 +159,8 @@ setosaSL = data[:50,0]
 setosaSW = data[:50,1]
 setosaPL = data[:50,2]
 setosaPW = data[:50,3]
-#print(setosaSL)pyth
+
+#print(setosaSL)
 #print(setosaSW)
 #print(setosaPL)
 #print(setosaPW)
@@ -170,6 +171,8 @@ versiSL = data[50:100,0]
 versiSW = data[50:100,1]
 versiPL = data[50:100,2]
 versiPW = data[50:100,3]
+
+#print(versicolor)
 #print(versiSL)
 #print(versiSW)
 #print(versiPL)
@@ -183,3 +186,18 @@ print(vergiSL)
 print(vergiSW)
 print(vergiPL)
 print(vergiPW)
+
+verginica = (vergiSL, vergiSW, vergiPL, vergiPW)
+#print(verginica)
+plt.hist(verginica)
+plt.show()
+
+versicolor = (versiSL, versiSW, versiPL, versiPW)
+#print(versicolor)
+plt.hist(versicolor)
+plt.show()
+
+setosa = (setosaSL, setosaSW, setosaPL, setosaPW)
+#print(setosa)
+plt.hist(setosa)
+plt.show()
