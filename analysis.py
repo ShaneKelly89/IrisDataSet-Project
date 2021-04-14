@@ -88,39 +88,14 @@ for x in column:                   #creating a for loop to go through our dict
     print("The Mean value for {} is {}".format(x["title"], variableMean))
     print("The Standard Deviation for {} is {}".format(x["title"], variableStd))
     print("\n")
+    plt.hist(x["data"], color = 'b', label = 'Data')       #creating the histograms within the loop 
+    plt.title("Histrogram for {}".format(x["title"]))
+    plt.xlabel("{} (cm)".format(x["title"]))
+    plt.ylabel("Distribution of occurance")
+    plt.legend
+    plt.show()
 
-
-#Histograms
-plt.hist(sepalLenght, color = 'b', label = 'Data')
-plt.legend()       
-plt.title("Histrogram for Sepal Lenght Data")
-plt.xlabel('Sepal Lenght (cm)')
-plt.ylabel('distribution of occurance')
-plt.show()
-
-plt.hist(sepalWidth, color = 'b', label = 'Data')
-plt.legend()       
-plt.title("Histrogram for Sepal Width Data")
-plt.xlabel('Sepal Width (cm)')
-plt.ylabel('distribution of occurance')
-plt.show()
-
-plt.hist(petalLenght, color = 'b', label = 'Data')
-plt.legend()       
-plt.title("Histrogram for Petal Lenght Data")
-plt.xlabel('Petal Lenght (cm)')
-plt.ylabel('distribution of occurance')
-plt.show()
-
-plt.hist(petalWidth, color = 'b', label = 'Data')
-plt.legend()       
-plt.title("Histrogram for Petal Width Data")
-plt.xlabel('Petal Width (cm)')
-plt.ylabel('distribution of occurance')
-plt.show()
-
-#Happy with code at this point, will start looking at scatterplots now but will also be checking if code can improve
-#Refer to line 70 in roughwork.py
+#Really happy with the above code!! A lot neater and gets rid of un needed lines of repeatative code.
 
 #Scatterplots - output a scatteerplot of each pair of variables 
 #A scatter plot (also called a scatterplot, scatter graph, scatter chart, scattergram, or scatter diagram) is a 
