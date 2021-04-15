@@ -125,6 +125,30 @@ b = sepalWidth
 c = petalLenght
 d = petalWidth
 
+scatdict = [{                              #Creating a dict for scatterplot 
+    "title": "Sepal Lenght and Sepal Width",
+    "data": [a,b]
+},{
+    "title": "Sepal Lenght and Petal Lenght",
+    "data": [a,c]
+}, {
+    "title": "Sepal Lenght and Petal Width",
+    "data": [a,d]
+}, {
+    "title": "Sepal Width and Petal Lenght",
+    "data": [b,c]
+}, {
+    "title": "Sepal Width and Petal Width",
+    "data": [b,d]
+}, {
+    "title": "Petal Lenght and Petal Width",
+    "data": [c,d]
+}]
+
+for y in scatdict:
+    plt.scatter(y["data"][0],y["data"][1])
+    plt.show()
+
 plt.scatter(a,b)
 plt.title("Scatter Plot for Sepal Lenght and Sepal Width")
 plt.xlabel("Sepal Lenght")
