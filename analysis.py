@@ -130,10 +130,6 @@ plt.hist(setosa)
 plt.show()
 
 
-
-
-
-
 #Scatterplots - output a scatteerplot of each pair of variables 
 #A scatter plot (also called a scatterplot, scatter graph, scatter chart, scattergram, or scatter diagram) is a 
 # type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables 
@@ -147,28 +143,43 @@ b = sepalWidth
 c = petalLenght
 d = petalWidth
 
-plt.scatter(a,b, color = 'r')
-plt.title("Scatter Plot for Sepal Lenght and Sepal Width")
-plt.xlabel("Sepal Lenght")
-plt.ylabel("Sepal Width")
-plt.show()
-plt.scatter(a,c, color = 'r')
-plt.title("Scatter Plot for Sepal Lenght and Petal Lenght")
-plt.xlabel("Sepal Lenght")
-plt.ylabel("Petal Lenght")
-plt.show()
-plt.scatter(a,d, color = 'r')
-plt.title("Scatter Plot for Sepal Lenght and Petal Width")
-plt.xlabel("Sepal Lenght")
-plt.ylabel("Petal Width")
-plt.show()
-plt.scatter(b,c, color = 'r')
-plt.title("Scatter Plot for Sepal Width and Petal Lenght")
-plt.xlabel("Sepal Width")
-plt.ylabel("Petal Lenght")
-plt.show()
-plt.scatter(c,d, color = 'r')
-plt.title("Scatter Plot for Petal Lenght and Petal Width")
-plt.xlabel("Petal Lenght")
-plt.ylabel("Petal Width")
-plt.show()
+#Having created a dict and using a loop to create the histograms, I spent time trialing the same for the 
+#scatterplots, as similar to previous versions of histrogram code it was very repetative 
+#After spending time and with some research and trial and error the below code was written which placed the required 
+#information into a dict, which is then looped through using a for loop to output scatterplots for each pair of variables 
+
+#https://stackoverflow.com/questions/30013511/python-plot-a-graph-from-values-inside-dictionary/30013848
+
+scatdict = [{                              #Creating a dict for scatterplot 
+    "title": "Sepal Lenght and Sepal Width",
+    "labels": ["Sepal Lenght", "Sepal Width"],    #added in labels to use for scatterplot labelling
+    "data": [a,b]
+},{
+    "title": "Sepal Lenght and Petal Lenght",
+    "labels": ["Sepal Lenght", "Petal Lenght"],
+    "data": [a,c]
+}, {
+    "title": "Sepal Lenght and Petal Width",
+    "labels": ["Sepal Lenght", "Petal Width"],
+    "data": [a,d]
+}, {
+    "title": "Sepal Width and Petal Lenght",
+    "labels": ["Sepal Width","Petal Lenght"],
+    "data": [b,c]
+}, {
+    "title": "Sepal Width and Petal Width",
+    "labels": ["Sepal Width","Petal Width"],
+    "data": [b,d]
+}, {
+    "title": "Petal Lenght and Petal Width",
+    "labels": ["Petal Lenght", "Petal Width"],
+    "data": [c,d]
+}]
+
+for y in scatdict:                         #for loop to loop through the dict 
+    plt.scatter(y["data"][0],y["data"][1], label = "Data")   #calling what info to use for scatterplot (1st entry in 'data' and second entry in 'data)
+    plt.title("Scatter Plot for {}.".format(y["title"]))
+    plt.xlabel(y["labels"][0])
+    plt.ylabel(y["labels"][1])
+    plt.legend
+    plt.show()
