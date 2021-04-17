@@ -45,3 +45,34 @@ The Iris Dataset is a multivariate dataset that contains 4 features of 50 sample
 The dataset was first introduced by British statistician, eugenicist, and biologist Ronald Fisher in his 1963 paper '_The use of multiple measurements in taxonomic problems_', which is available to read at <https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x> [1].
 The dataset is was introduced as an example of linear discriminant analysis, which refers to 'a method used to find a linear combination of features that characterise or separate two or more classes of objects or events' [2]. As such, based on the combination of the four features mentioned above, Fisher developed a linear discrimination model which was able to distinguish between the three species of Iris. A snapshot of Fisher's original data can be viewed below.\
 ![](Images/FishersData.png)
+
+
+# The Environment 
+A number of programmes and resources were essential to the completion of this project. This include: _Anaconda_, _Python_, _Visual Studio Code_, _The Iris Dataset_, and _GitHub_.
+A selection of Python Library extensions were also utilized throughout. Time was spent becoming familiar with these libraries through both weekly lectures and independent research. The libraries used in this project are: 
+* Matplotlib: Matplotlib is a graph plotting library in Python that serves as a visualisation utility. It is a comprehensive library for creating static, animated, and interactive visualisations in Python [3].gi
+* NumPy: NumPy is a Python library used for working with arrays. Using NumPy has a number of benefits to data scientists, including increased computational speed, fewer loops, clearer code, and improved quality. It is seen as the de facto standard for multidimensional arrays in Python [4].
+* pandas: Pandas is a python library used for working with data sets, and has functions for analysing, cleaning, exploring, and manipulating data. Pandas allows us to analyse big data and make conclusions based on statistical theories [5].
+
+
+# Exploration of the Data 
+Below you will find the results of the exploration of the dataset using Python. As previously mentioned, the code created to run this exploration underwent a number of developments and updates throughout the process.
+
+Based on the background knowledge known about the Iris Dataset, there are certain assumptions that can be made around the data within this dataset. However, the author did not take such assumptions for granted and spent time exploring the data to confirm that the dataset I was using contained the following information before beginning my project: 
+1.	That the data contained the correct number of rows and columns (150, 5) 
+2.	That I had correctly names the five columns.
+3.	That the data contained the three species of flower
+4.	That the data was evenly distributed between the three flowers (50 each)
+
+![](Images/IrisdataShapeInfo.png)
+
+![](Images/species.png) 
+
+
+
+
+
+
+
+
+
