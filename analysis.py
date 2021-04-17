@@ -106,19 +106,27 @@ for x in column:                   #creating a for loop to go through our dict
 setosa = (data[:50,0], data[:50,1], data[:50,2], data[:50,3])
 versicolor = (data[50:100,0], data[50:100,1], data[50:100,2], data[50:100,3])
 virginica = (data[100:,0], data[100:,1], data[100:,2], data[100:,3])
-print(setosa)
-print("\n")
-print(versicolor)
-print("\n")
-print(virginica)
-#prints statements were ran on the above data to check they were correct 
+#print(setosa)
+#print(versicolor)
+#print(virginica)
+flowers = [{                              #Creating a dict containing variable and corresponding data 
+    "title": "Setosa Flower",
+    "data": setosa,
+},{
+    "title": "Versicolor Flower",
+    "data": versicolor,
+}, {
+    "title": "Virginica Flower",
+    "data": virginica,
+}]
 
-plt.hist(virginica)
-plt.show()
-plt.hist(versicolor)
-plt.show()
-plt.hist(setosa)
-plt.show()
+for a in flowers: 
+    plt.hist(a["data"], label =['Sepal Lenght','Sepal Width','Petal Lenght', 'Petal Width'])       #creating the histograms within the loop 
+    plt.title("Histrogram for {}".format(a["title"]))
+    plt.xlabel(a["title"])
+    plt.ylabel("Distribution of occurance")
+    plt.legend(loc = 'upper right')
+    plt.show()
 
 
 #Scatterplots - output a scatteerplot of each pair of variables 
