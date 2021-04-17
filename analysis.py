@@ -92,7 +92,7 @@ for x in column:                   #creating a for loop to go through our dict
     plt.title("Histrogram for {}".format(x["title"]))
     plt.xlabel("{} (cm)".format(x["title"]))
     plt.ylabel("Distribution of occurance")
-    plt.legend
+    plt.legend(loc = 'upper right')
     plt.show()
 
 #Really happy with the above code!! A lot neater and gets rid of un needed lines of repeatative code.
@@ -180,5 +180,5 @@ for y in scatdict:                         #for loop to loop through the dict
     plt.title("Scatter Plot for {}.".format(y["title"]))
     plt.xlabel(y["labels"][0])
     plt.ylabel(y["labels"][1])
-    plt.legend
+    plt.legend(loc = 'upper left')
     plt.show()
