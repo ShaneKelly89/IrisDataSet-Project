@@ -102,27 +102,18 @@ for x in column:                   #creating a for loop to go through our dict
 #To do this I will first isloate the data for each species within the variable columns 
 #The use these to create a new variable for each of the 3 species 
 
-setosaSL = data[:50,0]
-setosaSW = data[:50,1]
-setosaPL = data[:50,2]
-setosaPW = data[:50,3]
 
-versiSL = data[50:100,0]
-versiSW = data[50:100,1]
-versiPL = data[50:100,2]
-versiPW = data[50:100,3]
-
-vergiSL = data[100:,0]
-vergiSW = data[100:,1]
-vergiPL = data[100:,2]
-vergiPW = data[100:,3]
+setosa = (data[:50,0], data[:50,1], data[:50,2], data[:50,3])
+versicolor = (data[50:100,0], data[50:100,1], data[50:100,2], data[50:100,3])
+virginica = (data[100:,0], data[100:,1], data[100:,2], data[100:,3])
+print(setosa)
+print("\n")
+print(versicolor)
+print("\n")
+print(virginica)
 #prints statements were ran on the above data to check they were correct 
 
-verginica = (vergiSL, vergiSW, vergiPL, vergiPW)
-versicolor = (versiSL, versiSW, versiPL, versiPW)
-setosa = (setosaSL, setosaSW, setosaPL, setosaPW)
-
-plt.hist(verginica)
+plt.hist(virginica)
 plt.show()
 plt.hist(versicolor)
 plt.show()
