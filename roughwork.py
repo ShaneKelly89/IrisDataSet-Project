@@ -235,3 +235,37 @@ setosa = (setosaSL, setosaSW, setosaPL, setosaPW)
 #print(setosa)
 plt.hist(setosa)
 plt.show()
+
+
+#I may need to have the statistics for each of the columns for each of the flowers to explain the histograms? 
+
+setosa = (data[:50,0], data[:50,1], data[:50,2], data[:50,3])
+versicolor = (data[50:100,0], data[50:100,1], data[50:100,2], data[50:100,3])
+virginica = (data[100:,0], data[100:,1], data[100:,2], data[100:,3])
+
+for each in setosa:
+    variMin = np.min(each)
+    variMax = np.max(each)
+    variMean = np.mean(each)
+    print(variMin)
+    print(variMax)
+    print(variMean)
+    print("\n")
+
+for r in versicolor:
+    variMini = np.min(r)
+    variMaxi = np.max(r)
+    variMeani = np.mean(r)
+    print(variMini)
+    print(variMaxi)
+    print(variMeani)
+    print("\n")
+
+for g in virginica: 
+    variableMinimum = np.min(g)
+    variableMaximum = np.max(g)
+    variableMean = np.mean(g)
+    print(variableMinimum)
+    print(variableMaximum)
+    print(variableMean)
+    print("\n")
