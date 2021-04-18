@@ -108,7 +108,7 @@ As can be seen (add summary)
 ### Petal Length
 The Petal Length Histogram and the descriptive statistics for Petal Length are provided below:
 
-![](hisotgrams/PetalLenghtHisto.png)
+![](histograms/PetalLenghtHisto.png)
 
 ![](Images/petallengthdata.png)
 
