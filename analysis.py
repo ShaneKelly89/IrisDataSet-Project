@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 #https://realpython.com/python-csv/
 
 file = "iris.csv"
-index = ['sepal lenght', 'sepal width', 'petal lenght', 'petal width', 'species']
+index = ['sepal length', 'sepal width', 'petal length', 'petal width', 'species']
 dataset = pnd.read_csv(file, names = index) 
 #Importing and coding the data 
 
@@ -32,19 +32,19 @@ print("\n")
 data = np.genfromtxt(file, delimiter=',')
 #print(data)
 
-#index = ['sepal lenght', 'sepal width', 'petal lenght', 'petal width', 'species']
+#index = ['sepal length', 'sepal width', 'petal length', 'petal width', 'species']
 
 #http://www.hpc-carpentry.org/hpc-python/03-lists/
 #I will now write code and create a variable for each row of data 
 
 
-sepalLenght = data[:,0]
+sepallength = data[:,0]
 sepalWidth = data[:,1]
-petalLenght = data[:,2]
+petallength = data[:,2]
 petalWidth = data[:,3]
-#print(sepalLenght)
+#print(sepallength)
 #print(sepalWidth)
-#print(petalLenght)
+#print(petallength)
 #print(petalWidth)
 #ran to check to see if the splice was in line with file 
 
@@ -66,14 +66,14 @@ print("As seen above, the dataset contains numeric data which is held within fou
 print("Printed blew are some statistical details for each of the four variables in the columns:")
 
 column = [{                              #Creating a dict containing variable and corresponding data 
-    "title": "Sepal Lenght",
-    "data": sepalLenght,
+    "title": "Sepal length",
+    "data": sepallength,
 },{
     "title": "Sepal Width",
     "data": sepalWidth,
 }, {
-    "title": "Petal Lenght",
-    "data": petalLenght,
+    "title": "Petal length",
+    "data": petallength,
 }, {
     "title": "Petal Width",
     "data": petalWidth,
@@ -101,6 +101,27 @@ for x in column:                   #creating a for loop to go through our dict
 #containing the data for each variable 
 #To do this I will first isloate the data for each species within the variable columns 
 #The use these to create a new variable for each of the 3 species 
+#While isolating the data and getting descriptive stats for each was relatively okay, 
+#Finding an appropriate way of outputting the descriptives was not so easy for me. 
+#The below code took a lot of tinkering and trial and error, but it will provide the min, max, and mean for 
+#Sepal Lenght, Sepal Width, Petal Length, and Petal Width for each 3 species of Iris.
+
+
+#Putting flower data into seperate dicts 
+setosa = {'sepal length': data[:50,0], 'sepal width': data[:50,1], 'petal length': data[:50,2], 'petal width': data[:50,3]}
+versicolor = {'sepal length': data[50:100,0], 'sepal width': data[50:100,1], 'petal length': data[50:100,2], 'petal width': data[50:100,3]}
+virginica = {'sepal length': data[100:,0], 'sepal width': data[100:,1], 'petal length': data[100:,2], 'petal width': data[100:,3]}
+
+#creating new dict to store each flower plus its data
+flowers = {'setosa': setosa, 'versicolor': versicolor, 'virginica': virginica}
+
+#https://realpython.com/iterate-through-dictionary-python/
+for flower_name, flower_stats in flowers.items():              
+    for variable_name, variable_value in flower_stats.items():
+        print("The minimum for {} {} is {}".format(flower_name, variable_name, np.min(variable_value)))
+        print("The maximum for {} {} is {}".format(flower_name, variable_name, np.max(variable_value)))
+        print("The mean for {} {} is {}".format(flower_name, variable_name, np.mean(variable_value)))
+        print()
 
 
 setosa = (data[:50,0], data[:50,1], data[:50,2], data[:50,3])
@@ -120,10 +141,10 @@ flowers = [{                              #Creating a dict containing variable a
     "data": virginica,
 }]
 
-for a in flowers: 
-    plt.hist(a["data"], label =['Sepal Lenght','Sepal Width','Petal Lenght', 'Petal Width'])       #creating the histograms within the loop 
-    plt.title("Histrogram for {}".format(a["title"]))
-    plt.xlabel(a["title"])
+for flower in flowers: 
+    plt.hist(flower["data"], label =['Sepal length','Sepal Width','Petal length', 'Petal Width'])       #creating the histograms within the loop 
+    plt.title("Histrogram for {}".format(flower["title"]))
+    plt.xlabel("Each variable in cm")
     plt.ylabel("Distribution of occurance")
     plt.legend(loc = 'upper right')
     plt.show()
@@ -137,9 +158,9 @@ for a in flowers:
 #https://www.w3schools.com/python/python_ml_scatterplot.asp
 #https://www.w3schools.com/python/matplotlib_scatter.asp
 
-a = sepalLenght        #creating variables to use for scatterplots 
+a = sepallength        #creating variables to use for scatterplots 
 b = sepalWidth
-c = petalLenght
+c = petallength
 d = petalWidth
 
 #Having created a dict and using a loop to create the histograms, I spent time trialing the same for the 
@@ -150,28 +171,28 @@ d = petalWidth
 #https://stackoverflow.com/questions/30013511/python-plot-a-graph-from-values-inside-dictionary/30013848
 
 scatdict = [{                              #Creating a dict for scatterplot 
-    "title": "Sepal Lenght and Sepal Width",
-    "labels": ["Sepal Lenght", "Sepal Width"],    #added in labels to use for scatterplot labelling
+    "title": "Sepal length and Sepal Width",
+    "labels": ["Sepal length", "Sepal Width"],    #added in labels to use for scatterplot labelling
     "data": [a,b]
 },{
-    "title": "Sepal Lenght and Petal Lenght",
-    "labels": ["Sepal Lenght", "Petal Lenght"],
+    "title": "Sepal length and Petal length",
+    "labels": ["Sepal length", "Petal length"],
     "data": [a,c]
 }, {
-    "title": "Sepal Lenght and Petal Width",
-    "labels": ["Sepal Lenght", "Petal Width"],
+    "title": "Sepal length and Petal Width",
+    "labels": ["Sepal length", "Petal Width"],
     "data": [a,d]
 }, {
-    "title": "Sepal Width and Petal Lenght",
-    "labels": ["Sepal Width","Petal Lenght"],
+    "title": "Sepal Width and Petal length",
+    "labels": ["Sepal Width","Petal length"],
     "data": [b,c]
 }, {
     "title": "Sepal Width and Petal Width",
     "labels": ["Sepal Width","Petal Width"],
     "data": [b,d]
 }, {
-    "title": "Petal Lenght and Petal Width",
-    "labels": ["Petal Lenght", "Petal Width"],
+    "title": "Petal length and Petal Width",
+    "labels": ["Petal length", "Petal Width"],
     "data": [c,d]
 }]
 
