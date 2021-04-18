@@ -88,7 +88,7 @@ Using the above dictionary, a for loop was used to loop through the dictionary d
 ### Sepal Length
 The Sepal Length Histogram and the descriptive statistics for Sepal Length are provided below:
 
-![](Images/SepalLenghtHisto.png)
+![](histograms/SepalLenghtHisto.png)
 
 ![](Images/sepallengtdata.png)
 
@@ -98,7 +98,7 @@ As can be seen (add summary)
 
 The Sepal Width Histogram and the descriptive statistics for Sepal Width are provided below:
 
-![](Images/SepalWidthHisto.png)
+![](histograms/SepalWidthHisto.png)
 
 ![](Images/sepalwidthdata.png) 
 
@@ -108,7 +108,7 @@ As can be seen (add summary)
 ### Petal Length
 The Petal Length Histogram and the descriptive statistics for Petal Length are provided below:
 
-![](Images/PetalLenghtHisto.png)
+![](hisotgrams/PetalLenghtHisto.png)
 
 ![](Images/petallengthdata.png)
 
@@ -118,7 +118,7 @@ As can be seen (add summary)
 ### Petal Width
 The Petal Width Histogram and the descriptive statistics for Petal Width are provided below:
 
-![](Images/PetalWidthHisto.png)
+![](histograms/PetalWidthHisto.png)
 
 ![](Images/petalwidthdata.png)
 
