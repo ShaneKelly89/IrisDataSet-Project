@@ -57,11 +57,7 @@ sepallength = data[:,0]
 sepalWidth = data[:,1]
 petallength = data[:,2]
 petalWidth = data[:,3]
-#print(sepallength)
-#print(sepalWidth)
-#print(petallength)
-#print(petalWidth)
-#ran to check to see if the splice was in line with file 
+#prints were ran to check to see if the splice was in line with file 
 
 column = [{                              #Creating a dict containing variable and corresponding data 
     "title": "Sepal length",
