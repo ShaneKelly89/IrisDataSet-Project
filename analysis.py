@@ -35,19 +35,7 @@ data = np.genfromtxt(file, delimiter=',')
 #index = ['sepal length', 'sepal width', 'petal length', 'petal width', 'species']
 
 #http://www.hpc-carpentry.org/hpc-python/03-lists/
-#I will now write code and create a variable for each row of data 
-
-
-sepallength = data[:,0]
-sepalWidth = data[:,1]
-petallength = data[:,2]
-petalWidth = data[:,3]
-#print(sepallength)
-#print(sepalWidth)
-#print(petallength)
-#print(petalWidth)
-#ran to check to see if the splice was in line with file 
-
+#write code and create a variable for each row of data 
 #taking a closer look at each of the variables 
 #lets use python to describe the statistical properties of each variable 
 #https://jakevdp.github.io/PythonDataScienceHandbook/02.04-computation-on-arrays-aggregates.html
@@ -64,6 +52,16 @@ petalWidth = data[:,3]
 
 print("As seen above, the dataset contains numeric data which is held within four seperate columns")
 print("Printed blew are some statistical details for each of the four variables in the columns:")
+
+sepallength = data[:,0]
+sepalWidth = data[:,1]
+petallength = data[:,2]
+petalWidth = data[:,3]
+#print(sepallength)
+#print(sepalWidth)
+#print(petallength)
+#print(petalWidth)
+#ran to check to see if the splice was in line with file 
 
 column = [{                              #Creating a dict containing variable and corresponding data 
     "title": "Sepal length",
