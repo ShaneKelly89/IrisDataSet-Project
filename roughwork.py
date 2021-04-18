@@ -221,51 +221,38 @@ print(vergiSW)
 print(vergiPL)
 print(vergiPW)
 
-verginica = (vergiSL, vergiSW, vergiPL, vergiPW)
+#verginica = (vergiSL, vergiSW, vergiPL, vergiPW
 #print(verginica)
-plt.hist(verginica)
-plt.show()
+#plt.hist(verginica)
+#plt.show()
 
-versicolor = (versiSL, versiSW, versiPL, versiPW)
+#versicolor = (versiSL, versiSW, versiPL, versiPW)
 #print(versicolor)
-plt.hist(versicolor)
-plt.show()
+#plt.hist(versicolor)
+#plt.show()
 
-setosa = (setosaSL, setosaSW, setosaPL, setosaPW)
+#setosa = (setosaSL, setosaSW, setosaPL, setosaPW)
 #print(setosa)
-plt.hist(setosa)
-plt.show()
+#plt.hist(setosa)
+#plt.show()
 
 
 #I may need to have the statistics for each of the columns for each of the flowers to explain the histograms? 
 
-setosa = (data[:50,0], data[:50,1], data[:50,2], data[:50,3])
-versicolor = (data[50:100,0], data[50:100,1], data[50:100,2], data[50:100,3])
-virginica = (data[100:,0], data[100:,1], data[100:,2], data[100:,3])
 
-for each in setosa:
-    variMin = np.min(each)
-    variMax = np.max(each)
-    variMean = np.mean(each)
-    print(variMin)
-    print(variMax)
-    print(variMean)
-    print("\n")
 
-for r in versicolor:
-    variMini = np.min(r)
-    variMaxi = np.max(r)
-    variMeani = np.mean(r)
-    print(variMini)
-    print(variMaxi)
-    print(variMeani)
-    print("\n")
+#Putting flower data into seperate dicts 
+setosa = {'sepal length': data[:50,0], 'sepal width': data[:50,1], 'petal length': data[:50,2], 'petal width': data[:50,3]}
+versicolor = {'sepal length': data[50:100,0], 'sepal width': data[50:100,1], 'petal length': data[50:100,2], 'petal width': data[50:100,3]}
+virginica = {'sepal length': data[100:,0], 'sepal width': data[100:,1], 'petal length': data[100:,2], 'petal width': data[100:,3]}
 
-for g in virginica: 
-    variableMinimum = np.min(g)
-    variableMaximum = np.max(g)
-    variableMean = np.mean(g)
-    print(variableMinimum)
-    print(variableMaximum)
-    print(variableMean)
-    print("\n")
+#creating new dict to store each flower plus its data
+flowers = {'setosa': setosa, 'versicolor': versicolor, 'virginica': virginica}
+
+#https://realpython.com/iterate-through-dictionary-python/
+for flower_name, flower_stats in flowers.items():              
+    for variable_name, variable_value in flower_stats.items():
+        print("The minimum for {} {} is {}".format(flower_name, variable_name, np.min(variable_value)))
+        print("The maximum for {} {} is {}".format(flower_name, variable_name, np.max(variable_value)))
+        print("The mean for {} {} is {}".format(flower_name, variable_name, np.mean(variable_value)))
+        print()
