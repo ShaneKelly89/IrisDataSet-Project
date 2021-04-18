@@ -68,7 +68,61 @@ Based on the background knowledge known about the Iris Dataset, there are certai
 
 ![](Images/species.png) 
 
+## Histograms for each variable
 
+As part of the exploration of the dataset code was written to produce Histogram data for each of the following variables: 
+1.	Sepal Length 
+2.	Sepal Width 
+3.	Petal Length 
+4.	Petal Width 
+
+To help support and describe the histograms, the minimum, maximum, mean, and standard deviation of each variable were also pulled. 
+The first step in getting the above information creating a dict containing each the data and its corresponding data. 
+
+![](Images/dictionary1.png)
+
+Using the above dictionary, a for loop was used to loop through the dictionary data, and output the min, max, mean, and standard deviation of each variable. It was also used to plot and produce the histograms provided below. 
+
+![](Images/loop1.png)
+
+### Sepal Length
+The Sepal Length Histogram and the descriptive statistics for Sepal Length are provided below:
+
+![](Images/SepalLenghtHisto.png)
+
+![](Images/sepallengtdata.png)
+
+As can be seen (add summary)
+
+### Sepal Width
+
+The Sepal Width Histogram and the descriptive statistics for Sepal Width are provided below:
+
+![](Images/SepalWidthHisto.png)
+
+![](Images/sepalwidthdata.png) 
+
+As can be seen (add summary)
+
+
+### Petal Length
+The Petal Length Histogram and the descriptive statistics for Petal Length are provided below:
+
+![](Images/PetalLenghtHisto.png)
+
+![](Images/petallengthdata.png)
+
+As can be seen (add summary)
+
+
+### Petal Width
+The Petal Width Histogram and the descriptive statistics for Petal Width are provided below:
+
+![](Images/PetalWidthHisto.png)
+
+![](Images/petalwidthdata.png)
+
+As can be seen (add summary)
 
 
 
