@@ -249,10 +249,23 @@ virginica = {'sepal length': data[100:,0], 'sepal width': data[100:,1], 'petal l
 #creating new dict to store each flower plus its data
 flowers = {'setosa': setosa, 'versicolor': versicolor, 'virginica': virginica}
 
+
+#The code written (in analysis) to output the histograms for each flower is abit confusing when they are outputted 
+#So I will now instead create each one seperately. 
+#Like the loop in for the variables histogram I will add the histograms into the loops
+#Would be nice to also make each variable for each species in a matrix 
+
+#
+
 #https://realpython.com/iterate-through-dictionary-python/
-for flower_name, flower_stats in flowers.items():              
+for flower_name, flower_stats in flowers.items():
     for variable_name, variable_value in flower_stats.items():
         print("The minimum for {} {} is {}".format(flower_name, variable_name, np.min(variable_value)))
         print("The maximum for {} {} is {}".format(flower_name, variable_name, np.max(variable_value)))
         print("The mean for {} {} is {}".format(flower_name, variable_name, np.mean(variable_value)))
         print()
+    df = pnd.DataFrame(flower_stats)
+    hist = df.hist(bins=8)
+    plt.suptitle("Histogram for {}".format(flower_name.capitalize()))
+    plt.show()
+    
