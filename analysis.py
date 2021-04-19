@@ -116,32 +116,17 @@ for flower_name, flower_stats in flowers.items():
         print("The maximum for {} {} is {}".format(flower_name, variable_name, np.max(variable_value)))
         print("The mean for {} {} is {}".format(flower_name, variable_name, np.mean(variable_value)))
         print()
+    df = pnd.DataFrame(flower_stats)
+    hist = df.hist(bins=8)
+    plt.suptitle("Histogram for {}".format(flower_name.capitalize()))
+    plt.show()     
+#As with the first histograms I tested to see if they could be created within the loop in roughwork 
+#Also, as there would be a lot of histograms if I did them all seperately, I wanted to find a way to place
+#the four variables for each species in the same output 
+#https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html
+#https://www.kite.com/python/docs/matplotlib.figure.Figure.suptitle
 
 
-setosa = (data[:50,0], data[:50,1], data[:50,2], data[:50,3])
-versicolor = (data[50:100,0], data[50:100,1], data[50:100,2], data[50:100,3])
-virginica = (data[100:,0], data[100:,1], data[100:,2], data[100:,3])
-#print(setosa)
-#print(versicolor)
-#print(virginica)
-flowers = [{                              #Creating a dict containing variable and corresponding data 
-    "title": "Setosa Flower",
-    "data": setosa,
-},{
-    "title": "Versicolor Flower",
-    "data": versicolor,
-}, {
-    "title": "Virginica Flower",
-    "data": virginica,
-}]
-
-for flower in flowers: 
-    plt.hist(flower["data"], label =['Sepal length','Sepal Width','Petal length', 'Petal Width'])       #creating the histograms within the loop 
-    plt.title("Histrogram for {}".format(flower["title"]))
-    plt.xlabel("Each variable in cm")
-    plt.ylabel("Distribution of occurance")
-    plt.legend(loc = 'upper right')
-    plt.show()
 
 
 #Scatterplots - output a scatteerplot of each pair of variables 
