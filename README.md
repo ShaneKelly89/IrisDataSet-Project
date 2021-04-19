@@ -129,24 +129,29 @@ To further investigate the data, separate analysis was carried out for the four 
 
 Firstly, the data for each flower were placed into separate dictionaries, with another dictionary being made storing each flower and its corresponding data: 
 ![](Images/flowersdict.png)
+
+
 The code provided above was then used within a for loop to produce the min, mean, and max for each of the four variables per species, while also outputting histograms to visualise the data: 
 ![](Images/flowerloop.png) 
 
 ### Setosa Flower 
 Below is a matrix containing histograms for each variable of the Setosa Flower: 
-![](Histograms/setosahist.png)
+![](histograms/setosahist.png)
+
 and the min, mean, max for each: 
 ![](Images/setosadata.png) 
 
 ### Versicolor Flower 
 Below is a matrix containing histograms for each variable of the Versicolor Flower: 
-![](Histograms/versicolorhist.png)
+![](histograms/versicolorhist.png)
+
 and the min, mean, max for each: 
 ![](Images/versicolordata.png) 
 
 ### Virginica Flower 
 Below is a matrix containing histograms for each variable of the Virginica Flower: 
-![](Histograms/virginicahist.png)
+![](histograms/virginicahist.png)
+
 and the min, mean, max for each: 
 ![](Images/virginicadata.png) 
 
