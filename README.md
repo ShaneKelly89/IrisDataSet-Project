@@ -124,6 +124,33 @@ The Petal Width Histogram and the descriptive statistics for Petal Width are pro
 
 As can be seen (add summary)
 
+## Histograms for Each Flower
+To further investigate the data, separate analysis was carried out for the four variables (sepal length, sepal width, petal length, petal width) for each of the three species Iris flower. The code was developed and improved over the course of the project. 
+
+Firstly, the data for each flower were placed into separate dictionaries, with another dictionary being made storing each flower and its corresponding data: 
+![](Images/flowersdict.png)
+The code provided above was then used within a for loop to produce the min, mean, and max for each of the four variables per species, while also outputting histograms to visualise the data: 
+![](Images/flowerloop.png) 
+
+### Setosa Flower 
+Below is a matrix containing histograms for each variable of the Setosa Flower: 
+![](Histograms/setosahist.png)
+and the min, mean, max for each: 
+![](Images/setosadata.png) 
+
+### Versicolor Flower 
+Below is a matrix containing histograms for each variable of the Versicolor Flower: 
+![](Histograms/versicolorhist.png)
+and the min, mean, max for each: 
+![](Images/versicolordata.png) 
+
+### Virginica Flower 
+Below is a matrix containing histograms for each variable of the Virginica Flower: 
+![](Histograms/virginicahist.png)
+and the min, mean, max for each: 
+![](Images/virginicadata.png) 
+
+
 
 
 
