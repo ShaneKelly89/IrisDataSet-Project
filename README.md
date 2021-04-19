@@ -139,6 +139,7 @@ Below is a matrix containing histograms for each variable of the Setosa Flower:
 ![](histograms/setosahist.png)
 
 and the min, mean, max for each: 
+
 ![](Images/setosadata.png) 
 
 ### Versicolor Flower 
@@ -146,6 +147,7 @@ Below is a matrix containing histograms for each variable of the Versicolor Flow
 ![](histograms/versicolorhist.png)
 
 and the min, mean, max for each: 
+
 ![](Images/versicolordata.png) 
 
 ### Virginica Flower 
@@ -153,6 +155,7 @@ Below is a matrix containing histograms for each variable of the Virginica Flowe
 ![](histograms/virginicahist.png)
 
 and the min, mean, max for each: 
+
 ![](Images/virginicadata.png) 
 
 
