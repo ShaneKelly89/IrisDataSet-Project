@@ -169,26 +169,32 @@ This dictionary was then used for a loop in which the scatter plots were created
 ### Sepal Length and Sepal Width 
 Below is a scatter plot of the data for sepal length and sepal width 
 ![](scatterplots/sepLsepWscatter.png)
+
 Explain ……
 ### Sepal Length and Petal Length
 Below is a scatter plot of the data for sepal length and petal length 
-![](scatterplots/sepLpetL.png)
+![](scatterplots/sepLpetLscatter.png)
+
 Explain …………..
 ### Sepal Length and Petal Width
 Below is a scatter plot of the data for sepal length and petal width 
-![](scatterplots/sepLpetW.png)
+![](scatterplots/sepLpetWscatter.png)
+
 Explain …..
 ### Sepal Width and Petal Length 
 Below is a scatter plot of the data for sepal width and petal length 
-![](scatterplots/sepWpetL.png)
+![](scatterplots/sepWpetLscatter.png)
+
 ………….
 ### Sepal Width and Petal Width
 Below is a scatter plot of the data for sepal width and petal width 
-![](scatterplots/sepWpetW.png)
+![](scatterplots/sepWpetW.scatterpng)
+
 ……………….
 ### Petal Length and Petal Width 
 Below is a scatter plot of the data for petal length and petal width 
-![](scatterplots/petLpetW.png)
+![](scatterplots/petLpetWscatter.png)
+
 …………………..
 
 
