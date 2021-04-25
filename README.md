@@ -159,6 +159,41 @@ and the min, mean, max for each:
 ![](Images/virginicadata.png) 
 
 
+## Scatter Plot for each Pair of Variables 
+As part of this project we were asked to create scatter plots for each pair of variables. First, a dictionary containing the required information was created. 
+![](Images/scatterdict.png)
+
+This dictionary was then used for a loop in which the scatter plots were created. 
+![](Images/scatterloop.png)
+
+### Sepal Length and Sepal Width 
+Below is a scatter plot of the data for sepal length and sepal width 
+![](scatterplots/sepLsepWscatter.png)
+Explain ……
+### Sepal Length and Petal Length
+Below is a scatter plot of the data for sepal length and petal length 
+![](scatterplot/sepLpetL.png)
+Explain …………..
+### Sepal Length and Petal Width
+Below is a scatter plot of the data for sepal length and petal width 
+![](scatterplot/sepLpetW.png)
+Explain …..
+### Sepal Width and Petal Length 
+Below is a scatter plot of the data for sepal width and petal length 
+![](scatterplot/sepWpetL.png)
+………….
+### Sepal Width and Petal Width
+Below is a scatter plot of the data for sepal width and petal width 
+![](scatterplot/sepWpetW.png)
+……………….
+### Petal Length and Petal Width 
+Below is a scatter plot of the data for petal length and petal width 
+![](scatterplot/petLpetW.png)
+…………………..
+
+
+
+
 
 
 
