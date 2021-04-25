@@ -137,11 +137,6 @@ for flower_name, flower_stats in flowers.items():
 #https://www.w3schools.com/python/python_ml_scatterplot.asp
 #https://www.w3schools.com/python/matplotlib_scatter.asp
 
-a = sepallength        #creating variables to use for scatterplots 
-b = sepalWidth
-c = petallength
-d = petalWidth
-
 #Having created a dict and using a loop to create the histograms, I spent time trialing the same for the 
 #scatterplots, as similar to previous versions of histrogram code it was very repetative 
 #After spending time and with some research and trial and error the below code was written which placed the required 
