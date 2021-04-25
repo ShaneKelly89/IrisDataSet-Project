@@ -188,7 +188,7 @@ Below is a scatter plot of the data for sepal width and petal length
 ………….
 ### Sepal Width and Petal Width
 Below is a scatter plot of the data for sepal width and petal width 
-![](scatterplots/sepWpetW.scatterpng)
+![](scatterplots/sepWpetWscatter.png)
 
 ……………….
 ### Petal Length and Petal Width 
