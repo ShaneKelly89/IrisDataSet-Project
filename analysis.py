@@ -152,27 +152,27 @@ d = petalWidth
 scatdict = [{                              #Creating a dict for scatterplot 
     "title": "Sepal length and Sepal Width",
     "labels": ["Sepal length", "Sepal Width"],    #added in labels to use for scatterplot labelling
-    "data": [a,b]
+    "data": [sepallength,sepalWidth]
 },{
     "title": "Sepal length and Petal length",
     "labels": ["Sepal length", "Petal length"],
-    "data": [a,c]
+    "data": [sepallength,petallength]
 }, {
     "title": "Sepal length and Petal Width",
     "labels": ["Sepal length", "Petal Width"],
-    "data": [a,d]
+    "data": [sepallength,petalWidth]
 }, {
     "title": "Sepal Width and Petal length",
     "labels": ["Sepal Width","Petal length"],
-    "data": [b,c]
+    "data": [sepalWidth,petallength]
 }, {
     "title": "Sepal Width and Petal Width",
     "labels": ["Sepal Width","Petal Width"],
-    "data": [b,d]
+    "data": [sepalWidth,petalWidth]
 }, {
     "title": "Petal length and Petal Width",
     "labels": ["Petal length", "Petal Width"],
-    "data": [c,d]
+    "data": [petallength,petalWidth]
 }]
 
 for y in scatdict:                         #for loop to loop through the dict 
