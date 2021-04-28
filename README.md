@@ -203,7 +203,7 @@ As can be seen, there appears to be a high positive correlation between Petal Le
 
 ## References
 
-[https://en.wikipedia.org/wiki/Iris_flower_data_set]()
+https://en.wikipedia.org/wiki/Iris_flower_data_set
 
 [https://en.wikipedia.org/wiki/Linear_discriminant_analysis]()
 
