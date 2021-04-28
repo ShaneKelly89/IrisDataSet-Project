@@ -203,43 +203,43 @@ As can be seen, there appears to be a high positive correlation between Petal Le
 
 ## References
 
-[https://en.wikipedia.org/wiki/Iris_flower_data_set]()/
+[https://en.wikipedia.org/wiki/Iris_flower_data_set]()
 
-[https://en.wikipedia.org/wiki/Linear_discriminant_analysis]()/
+[https://en.wikipedia.org/wiki/Linear_discriminant_analysis]()
 
-[https://www.w3schools.com/python/matplotlib_pyplot.asp]()/
+[https://www.w3schools.com/python/matplotlib_pyplot.asp]()
 
-[https://realpython.com/numpy-tutorial/#:~:text=NumPy%20is%20a%20Python%20library,any%20Python%20data%20scientists%20journey]()/ 
+[https://realpython.com/numpy-tutorial/#:~:text=NumPy%20is%20a%20Python%20library,any%20Python%20data%20scientists%20journey]()
 
-[https://www.w3schools.com/python/pandas/pandas_intro.asp]()/ 
+[https://www.w3schools.com/python/pandas/pandas_intro.asp]() 
 
-[https://www.w3schools.com/python/pandas/default.asp]()/  
+[https://www.w3schools.com/python/pandas/default.asp]()  
 
-[https://machinelearningmastery.com/machine-learning-in-python-step-by-step/]()/ 
+[https://machinelearningmastery.com/machine-learning-in-python-step-by-step/]()
 
-[https://realpython.com/python-csv/]()/
+[https://realpython.com/python-csv/]()
 
-[https://stackoverflow.com/questions/3518778/how-do-i-read-csv-data-into-a-record-array-in-numpy]()/
+[https://stackoverflow.com/questions/3518778/how-do-i-read-csv-data-into-a-record-array-in-numpy]()
 
-[http://www.hpc-carpentry.org/hpc-python/03-lists/]()/
+[http://www.hpc-carpentry.org/hpc-python/03-lists/]()
 
-[https://jakevdp.github.io/PythonDataScienceHandbook/02.04-computation-on-arrays-aggregates.html]()/
+[https://jakevdp.github.io/PythonDataScienceHandbook/02.04-computation-on-arrays-aggregates.html]()
 
-[https://bit.ly/325l7aw]()/
+[https://bit.ly/325l7aw]()
 
-[https://learnonline.gmit.ie/pluginfile.php/293981/mod_label/intro/Lab%2005%20dataStructures.pdf]()/
+[https://learnonline.gmit.ie/pluginfile.php/293981/mod_label/intro/Lab%2005%20dataStructures.pdf]()
 
-[https://jakevdp.github.io/WhirlwindTourOfPython/06-built-in-data-structures.html]()/
+[https://jakevdp.github.io/WhirlwindTourOfPython/06-built-in-data-structures.html]()
 
-[https://realpython.com/iterate-through-dictionary-python/]()/
+[https://realpython.com/iterate-through-dictionary-python/]()
 
-[https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html]()/
+[https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html]()
 
-[https://www.kite.com/python/docs/matplotlib.figure.Figure.suptitle]()/
+[https://www.kite.com/python/docs/matplotlib.figure.Figure.suptitle]()
 
-[https://www.w3schools.com/python/python_ml_scatterplot.asp]()/
+[https://www.w3schools.com/python/python_ml_scatterplot.asp]()
 
-[https://www.w3schools.com/python/matplotlib_scatter.asp]()/
+[https://www.w3schools.com/python/matplotlib_scatter.asp]()
 
 [https://stackoverflow.com/questions/30013511/python-plot-a-graph-from-values-inside-dictionary/30013848]()
 
