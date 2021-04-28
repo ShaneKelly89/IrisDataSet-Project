@@ -42,17 +42,18 @@ The Iris Dataset is a multivariate dataset that contains 4 features of 50 sample
 
 ![](Images/Iris.png)
 
-The dataset was first introduced by British statistician, eugenicist, and biologist Ronald Fisher in his 1963 paper '_The use of multiple measurements in taxonomic problems_', which is available to read at <https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x> [1].
-The dataset is was introduced as an example of linear discriminant analysis, which refers to 'a method used to find a linear combination of features that characterise or separate two or more classes of objects or events' [2]. As such, based on the combination of the four features mentioned above, Fisher developed a linear discrimination model which was able to distinguish between the three species of Iris. A snapshot of Fisher's original data can be viewed below.\
+The dataset was first introduced by British statistician, eugenicist, and biologist Ronald Fisher in his 1963 paper '_The use of multiple measurements in taxonomic problems_', which is available to read at <https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x>.
+The dataset is was introduced as an example of linear discriminant analysis, which refers to 'a method used to find a linear combination of features that characterise or separate two or more classes of objects or events'.
+ As such, based on the combination of the four features mentioned above, Fisher developed a linear discrimination model which was able to distinguish between the three species of Iris. A snapshot of Fisher's original data can be viewed below.\
 ![](Images/FishersData.png)
 
 
 # The Environment 
 A number of programmes and resources were essential to the completion of this project. This include: _Anaconda_, _Python_, _Visual Studio Code_, _The Iris Dataset_, and _GitHub_.
 A selection of Python Library extensions were also utilized throughout. Time was spent becoming familiar with these libraries through both weekly lectures and independent research. The libraries used in this project are: 
-* Matplotlib: Matplotlib is a graph plotting library in Python that serves as a visualisation utility. It is a comprehensive library for creating static, animated, and interactive visualisations in Python [3].gi
-* NumPy: NumPy is a Python library used for working with arrays. Using NumPy has a number of benefits to data scientists, including increased computational speed, fewer loops, clearer code, and improved quality. It is seen as the de facto standard for multidimensional arrays in Python [4].
-* pandas: Pandas is a python library used for working with data sets, and has functions for analysing, cleaning, exploring, and manipulating data. Pandas allows us to analyse big data and make conclusions based on statistical theories [5].
+* Matplotlib: Matplotlib is a graph plotting library in Python that serves as a visualisation utility. It is a comprehensive library for creating static, animated, and interactive visualisations in Python.
+* NumPy: NumPy is a Python library used for working with arrays. Using NumPy has a number of benefits to data scientists, including increased computational speed, fewer loops, clearer code, and improved quality. It is seen as the de facto standard for multidimensional arrays in Python.
+* pandas: Pandas is a python library used for working with data sets, and has functions for analysing, cleaning, exploring, and manipulating data. Pandas allows us to analyse big data and make conclusions based on statistical theories.
 
 
 # Exploration of the Data 
@@ -76,7 +77,7 @@ As part of the exploration of the dataset code was written to produce Histogram 
 3.	Petal Length 
 4.	Petal Width 
 
-To help support and describe the histograms, the minimum, maximum, mean, and standard deviation of each variable were also pulled. 
+A histogram is a bar graph-like representation of data that buckets a range of outcomes into columns along the x-axis. The y-axis represents the number count or percentage of occurrences in the data for each column and can be used to visualize data distributions. To help support and describe the histograms, the minimum, maximum, mean, and standard deviation of each variable were also pulled. 
 The first step in getting the above information creating a dict containing each the data and its corresponding data. 
 
 ![](Images/dictionary1.png)
@@ -92,7 +93,7 @@ The Sepal Length Histogram and the descriptive statistics for Sepal Length are p
 
 ![](Images/sepallengtdata.png)
 
-As can be seen (add summary)
+
 
 ### Sepal Width
 
@@ -102,8 +103,6 @@ The Sepal Width Histogram and the descriptive statistics for Sepal Width are pro
 
 ![](Images/sepalwidthdata.png) 
 
-As can be seen (add summary)
-
 
 ### Petal Length
 The Petal Length Histogram and the descriptive statistics for Petal Length are provided below:
@@ -111,8 +110,6 @@ The Petal Length Histogram and the descriptive statistics for Petal Length are p
 ![](histograms/PetalLenghtHisto.png)
 
 ![](Images/petallengthdata.png)
-
-As can be seen (add summary)
 
 
 ### Petal Width
@@ -122,7 +119,6 @@ The Petal Width Histogram and the descriptive statistics for Petal Width are pro
 
 ![](Images/petalwidthdata.png)
 
-As can be seen (add summary)
 
 ## Histograms for Each Flower
 To further investigate the data, separate analysis was carried out for the four variables (sepal length, sepal width, petal length, petal width) for each of the three species Iris flower. The code was developed and improved over the course of the project. 
@@ -160,11 +156,15 @@ and the min, mean, max for each:
 
 
 ## Scatter Plot for each Pair of Variables 
-As part of this project we were asked to create scatter plots for each pair of variables. First, a dictionary containing the required information was created. 
+As part of this project we were asked to create scatter plots for each pair of variables. A scatter plot (aka scatter chart, scatter graph) uses dots to represent values for two different numeric variables. The position of each dot on the horizontal and vertical axis indicates values for an individual data point. Scatter plots are used to observe relationships between variables.
+
+First, a dictionary containing the required information was created. 
 ![](Images/scatterdict.png)
 
 This dictionary was then used for a loop in which the scatter plots were created. 
 ![](Images/scatterloop.png)
+
+
 
 ### Sepal Length and Sepal Width 
 Below is a scatter plot of the data for sepal length and sepal width 
