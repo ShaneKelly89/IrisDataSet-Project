@@ -164,7 +164,9 @@ First, a dictionary containing the required information was created.
 This dictionary was then used for a loop in which the scatter plots were created. 
 ![](Images/scatterloop.png)
 
-The below chart shows potential distributions found on the scatterplots and what they indicate. This will be used as a point of reference to help explain the below plots:
+The below chart shows potential distributions found on the scatterplots and what they indicate. This will be used as a point of reference to help explain the below plots.
+
+The correlation is said to be positive when the values increase together, while the correlation is said to be negative when the values decrease together. 
 
 ![](Images/scatterplotData.png)
 
