@@ -174,32 +174,32 @@ The correlation is said to be positive when the values increase together, while 
 Below is a scatter plot of the data for sepal length and sepal width 
 ![](scatterplots/sepLsepWscatter.png)
 
-Explain ……
+As can be seen, there appears to be no correlation within the data between Sepal Lenght and Sepal Width. 
 ### Sepal Length and Petal Length
 Below is a scatter plot of the data for sepal length and petal length 
 ![](scatterplots/sepLpetLscatter.png)
 
-Explain …………..
+As can be seen, there appears to be a high positive correlation between Sepal Lenght and Petal Lenght. 
 ### Sepal Length and Petal Width
 Below is a scatter plot of the data for sepal length and petal width 
 ![](scatterplots/sepLpetWscatter.png)
 
-Explain …..
+As can be seen, there appears to be a low positive correlation betwenn Sepal Length and Petal Width.
 ### Sepal Width and Petal Length 
 Below is a scatter plot of the data for sepal width and petal length 
 ![](scatterplots/sepWpetLscatter.png)
 
-………….
+As can be seen, there appears to be no correlation between Sepal Width and Petal Length
 ### Sepal Width and Petal Width
 Below is a scatter plot of the data for sepal width and petal width 
 ![](scatterplots/sepWpetWscatter.png)
 
-……………….
+As can be seen, there appears to be no correlation between Sepal Length and Petal Lenght
 ### Petal Length and Petal Width 
 Below is a scatter plot of the data for petal length and petal width 
 ![](scatterplots/petLpetWscatter.png)
 
-…………………..
+As can be seen, there appears to be a high positive correlation between Petal Lenght and Petal Width
 
 
 
