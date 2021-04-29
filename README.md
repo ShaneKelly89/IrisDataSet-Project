@@ -10,13 +10,20 @@ You might do that for this project as follows:
 2. Download the data set and add it to your repository.
 3. Write a program called analysis.py that:
 • outputs a summary of each variable to a single text file,
+
 • saves a histogram of each variable to png files, and
+
 • outputs a scatter plot of each pair of variables.
 It might help to suppose that your manager has asked you to investigate the data set, with a
 view to explaining it to your colleagues. Imagine that you are to give a presentation on the
 data set in a few weeks’ time, where you explain what investigating a data set entails and how
 Python can be used to do it. You have not been asked to create a deck of presentation slides,
 but rather to present your code and its output to them.'
+
+Within the Repository, 'analysis.py' is the main file. This contains the python script used to create the output 
+for this project and it should be used if you wish to run the code. A summary each variables properties can be 
+found in 'variable_summary.txt' which was created within the 'analysis.py' file. The remaining '.py' files were
+used by the author as places to work on the code away from the main file.
 
 # Task Preperation 
 
