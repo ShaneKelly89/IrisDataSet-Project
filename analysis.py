@@ -27,12 +27,11 @@ print("\n")
 print("The data places variables evenly into three species of Iris Flower:")
 print(dataset.groupby('species').size())
 print("\n")
+
 #Now I will read the file for NumPy 
 #https://stackoverflow.com/questions/3518778/how-do-i-read-csv-data-into-a-record-array-in-numpy
 data = np.genfromtxt(file, delimiter=',')
 #print(data)
-
-#index = ['sepal length', 'sepal width', 'petal length', 'petal width', 'species']
 
 #http://www.hpc-carpentry.org/hpc-python/03-lists/
 #write code and create a variable for each row of data 
@@ -52,6 +51,7 @@ data = np.genfromtxt(file, delimiter=',')
 
 print("As seen above, the dataset contains numeric data which is held within four seperate columns")
 print("Printed blew are some statistical details for each of the four variables in the columns:")
+print()
 
 sepallength = data[:,0]
 sepalWidth = data[:,1]
@@ -100,7 +100,8 @@ for x in column:                   #creating a for loop to go through our dict
 #The below code took a lot of tinkering and trial and error, but it will provide the min, max, and mean for 
 #Sepal Lenght, Sepal Width, Petal Length, and Petal Width for each 3 species of Iris.
 
-
+print("We will also take a look at some of the statistical properties of each of the three flower below:")
+print("\n")
 #Putting flower data into seperate dicts 
 setosa = {'sepal length': data[:50,0], 'sepal width': data[:50,1], 'petal length': data[:50,2], 'petal width': data[:50,3]}
 versicolor = {'sepal length': data[50:100,0], 'sepal width': data[50:100,1], 'petal length': data[50:100,2], 'petal width': data[50:100,3]}
@@ -143,6 +144,7 @@ for flower_name, flower_stats in flowers.items():
 #information into a dict, which is then looped through using a for loop to output scatterplots for each pair of variables 
 
 #https://stackoverflow.com/questions/30013511/python-plot-a-graph-from-values-inside-dictionary/30013848
+print("Finally, scatterplots for each pair of variables will be output. ")
 
 scatdict = [{                              #Creating a dict for scatterplot 
     "title": "Sepal length and Sepal Width",
