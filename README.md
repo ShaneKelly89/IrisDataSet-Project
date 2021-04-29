@@ -91,7 +91,7 @@ The Sepal Length Histogram and the descriptive statistics for Sepal Length are p
 
 ![](histograms/SepalLenghtHisto.png)
 
-![](Images/sepallengtdata.png)
+![](Images/sepallengthdata.png)
 
 
 
