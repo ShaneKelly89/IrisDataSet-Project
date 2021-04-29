@@ -8,6 +8,9 @@ import matplotlib.pyplot as plt
 #Importing the needed libraries 
 #https://realpython.com/python-csv/
 
+f = open("variable_summary.txt", "w")    #https://www.w3schools.com/python/python_file_write.asp
+#adding in txt file
+
 file = "iris.csv"
 index = ['sepal length', 'sepal width', 'petal length', 'petal width', 'species']
 dataset = pnd.read_csv(file, names = index) 
