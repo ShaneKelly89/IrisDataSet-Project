@@ -53,7 +53,7 @@ data = np.genfromtxt(file, delimiter=',')
 #https://jakevdp.github.io/WhirlwindTourOfPython/06-built-in-data-structures.html
 
 print("As seen above, the dataset contains numeric data which is held within four seperate columns")
-print("A statistical summary of each variable will be output to 'variable_summary.txt'")
+print("A statistical summary of each variable will be output to 'variable_summary.txt', along with corresponding histograms.")
 print()
 
 sepallength = data[:,0]
