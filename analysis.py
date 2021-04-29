@@ -53,7 +53,7 @@ data = np.genfromtxt(file, delimiter=',')
 #https://jakevdp.github.io/WhirlwindTourOfPython/06-built-in-data-structures.html
 
 print("As seen above, the dataset contains numeric data which is held within four seperate columns")
-print("Printed blew are some statistical details for each of the four variables in the columns:")
+print("A statistical summary of each variable will be output to 'variable_summary.txt'")
 print()
 
 sepallength = data[:,0]
@@ -80,11 +80,10 @@ for x in column:                   #creating a for loop to go through our dict
     variableMax = np.max(x["data"])
     variableMean = np.mean(x["data"])
     variableStd = np.std(x["data"])
-    print("The Minimum value for {} is {}".format(x["title"], variableMin))
-    print("The Maximum value for {} is {}".format(x["title"], variableMax))
-    print("The Mean value for {} is {}".format(x["title"], variableMean))
-    print("The Standard Deviation for {} is {}".format(x["title"], variableStd))
-    print("\n")
+    print("The Minimum value for {} is {}".format(x["title"], variableMin), file = f)    
+    print("The Maximum value for {} is {}".format(x["title"], variableMax), file = f)
+    print("The Mean value for {} is {}".format(x["title"], variableMean), file = f)
+    print("The Standard Deviation for {} is {}".format(x["title"], variableStd), file = f)
     plt.hist(x["data"], color = 'b', label = 'Data')       #creating the histograms within the loop 
     plt.title("Histrogram for {}".format(x["title"]))
     plt.xlabel("{} (cm)".format(x["title"]))
@@ -92,6 +91,9 @@ for x in column:                   #creating a for loop to go through our dict
     plt.legend(loc = 'upper right')
     plt.show()
 
+f.close()
+
+#Reference for adding to txt file : https://stackoverflow.com/questions/2918362/writing-string-to-a-file-on-a-new-line-every-time
 #Really happy with the above code!! A lot neater and gets rid of un needed lines of repeatative code.
 
 #Having explored and played around with the data, I have decided to create histograms for each of the three species 
