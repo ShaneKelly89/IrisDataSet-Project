@@ -224,6 +224,8 @@ https://www.w3schools.com/python/pandas/default.asp
 
 https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
 
+https://www.w3schools.com/python/python_file_write.asp
+
 https://realpython.com/python-csv/
 
 https://stackoverflow.com/questions/3518778/how-do-i-read-csv-data-into-a-record-array-in-numpy
@@ -239,6 +241,8 @@ https://learnonline.gmit.ie/pluginfile.php/293981/mod_label/intro/Lab%2005%20dat
 https://jakevdp.github.io/WhirlwindTourOfPython/06-built-in-data-structures.html
 
 https://realpython.com/iterate-through-dictionary-python/
+
+https://stackoverflow.com/questions/2918362/writing-string-to-a-file-on-a-new-line-every-time
 
 https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html
 
