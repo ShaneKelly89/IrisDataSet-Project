@@ -1,7 +1,7 @@
 # IrisDataSet-Project
 This is the repository created for the project within PANDS Module 2021. The following statement is the problem statement for the project, as per the breif.\
-'This project concerns the well-known Fisher’s Iris data set [3]. You must research the data set
-and write documentation and code (in Python [1]) to investigate it. An online search for
+'This project concerns the well-known Fisher’s Iris data set. You must research the data set
+and write documentation and code (in Python) to investigate it. An online search for
 information on the data set will convince you that many people have investigated it
 previously. You are expected to be able to break this project into several smaller tasks that
 are easier to solve, and to plug these together after they have been completed.
