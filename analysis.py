@@ -84,6 +84,7 @@ for x in column:                   #creating a for loop to go through our dict
     print("The Maximum value for {} is {}".format(x["title"], variableMax), file = f)
     print("The Mean value for {} is {}".format(x["title"], variableMean), file = f)
     print("The Standard Deviation for {} is {}".format(x["title"], variableStd), file = f)
+    f.write("\n")
     plt.hist(x["data"], color = 'b', label = 'Data')       #creating the histograms within the loop 
     plt.title("Histrogram for {}".format(x["title"]))
     plt.xlabel("{} (cm)".format(x["title"]))
@@ -91,7 +92,7 @@ for x in column:                   #creating a for loop to go through our dict
     plt.legend(loc = 'upper right')
     plt.show()
 
-f.close()
+
 
 #Reference for adding to txt file : https://stackoverflow.com/questions/2918362/writing-string-to-a-file-on-a-new-line-every-time
 #Really happy with the above code!! A lot neater and gets rid of un needed lines of repeatative code.
@@ -105,7 +106,7 @@ f.close()
 #The below code took a lot of tinkering and trial and error, but it will provide the min, max, and mean for 
 #Sepal Lenght, Sepal Width, Petal Length, and Petal Width for each 3 species of Iris.
 
-print("We will also take a look at some of the statistical properties of each of the three flower below:")
+print("A summary of the data for each of the species of Iris will also be printed to 'variables_summary.txt', along with histograms. ")
 print("\n")
 #Putting flower data into seperate dicts 
 setosa = {'sepal length': data[:50,0], 'sepal width': data[:50,1], 'petal length': data[:50,2], 'petal width': data[:50,3]}
@@ -118,14 +119,16 @@ flowers = {'setosa': setosa, 'versicolor': versicolor, 'virginica': virginica}
 #https://realpython.com/iterate-through-dictionary-python/
 for flower_name, flower_stats in flowers.items():              
     for variable_name, variable_value in flower_stats.items():
-        print("The minimum for {} {} is {}".format(flower_name, variable_name, np.min(variable_value)))
-        print("The maximum for {} {} is {}".format(flower_name, variable_name, np.max(variable_value)))
-        print("The mean for {} {} is {}".format(flower_name, variable_name, np.mean(variable_value)))
-        print()
+        print("The minimum for {} {} is {}".format(flower_name, variable_name, np.min(variable_value)), file = f)
+        print("The maximum for {} {} is {}".format(flower_name, variable_name, np.max(variable_value)),file = f)
+        print("The mean for {} {} is {}".format(flower_name, variable_name, np.mean(variable_value)), file = f)
+        f.write("\n")
     df = pnd.DataFrame(flower_stats)
     hist = df.hist(bins=8)
     plt.suptitle("Histogram for {}".format(flower_name.capitalize()))
     plt.show()     
+
+f.close() #closing the txt file
 #As with the first histograms I tested to see if they could be created within the loop in roughwork 
 #Also, as there would be a lot of histograms if I did them all seperately, I wanted to find a way to place
 #the four variables for each species in the same output 

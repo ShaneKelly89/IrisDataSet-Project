@@ -2,15 +2,67 @@ The Minimum value for Sepal length is 4.3
 The Maximum value for Sepal length is 7.9
 The Mean value for Sepal length is 5.843333333333334
 The Standard Deviation for Sepal length is 0.8253012917851409
+
 The Minimum value for Sepal Width is 2.0
 The Maximum value for Sepal Width is 4.4
 The Mean value for Sepal Width is 3.0540000000000003
 The Standard Deviation for Sepal Width is 0.4321465800705435
+
 The Minimum value for Petal length is 1.0
 The Maximum value for Petal length is 6.9
 The Mean value for Petal length is 3.758666666666666
 The Standard Deviation for Petal length is 1.7585291834055212
+
 The Minimum value for Petal Width is 0.1
 The Maximum value for Petal Width is 2.5
 The Mean value for Petal Width is 1.1986666666666668
 The Standard Deviation for Petal Width is 0.7606126185881716
+
+The minimum for setosa sepal length is 4.3
+The maximum for setosa sepal length is 5.8
+The mean for setosa sepal length is 5.006
+
+The minimum for setosa sepal width is 2.3
+The maximum for setosa sepal width is 4.4
+The mean for setosa sepal width is 3.418
+
+The minimum for setosa petal length is 1.0
+The maximum for setosa petal length is 1.9
+The mean for setosa petal length is 1.464
+
+The minimum for setosa petal width is 0.1
+The maximum for setosa petal width is 0.6
+The mean for setosa petal width is 0.244
+
+The minimum for versicolor sepal length is 4.9
+The maximum for versicolor sepal length is 7.0
+The mean for versicolor sepal length is 5.936
+
+The minimum for versicolor sepal width is 2.0
+The maximum for versicolor sepal width is 3.4
+The mean for versicolor sepal width is 2.7700000000000005
+
+The minimum for versicolor petal length is 3.0
+The maximum for versicolor petal length is 5.1
+The mean for versicolor petal length is 4.26
+
+The minimum for versicolor petal width is 1.0
+The maximum for versicolor petal width is 1.8
+The mean for versicolor petal width is 1.3259999999999998
+
+The minimum for virginica sepal length is 4.9
+The maximum for virginica sepal length is 7.9
+The mean for virginica sepal length is 6.587999999999998
+
+The minimum for virginica sepal width is 2.2
+The maximum for virginica sepal width is 3.8
+The mean for virginica sepal width is 2.974
+
+The minimum for virginica petal length is 4.5
+The maximum for virginica petal length is 6.9
+The mean for virginica petal length is 5.5520000000000005
+
+The minimum for virginica petal width is 1.4
+The maximum for virginica petal width is 2.5
+The mean for virginica petal width is 2.0260000000000002
+
